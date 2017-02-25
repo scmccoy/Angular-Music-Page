@@ -1,0 +1,29 @@
+body {
+background: $espresso;
+}
+
+@import url( 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Roboto:300,400,400i,700');
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 2;
+}
+
+main {
+  display: flex;
+
+}
+
+#template__container {
+  display: flex;
+  justify-content: center;
+}

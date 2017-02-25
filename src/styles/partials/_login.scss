@@ -1,0 +1,28 @@
+#login__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $hillary;
+  border-radius: 10px;
+  padding: 25px 15px;
+  margin: 15px;
+  background: $oil;
+  color: $offWhite;
+}
+
+.login__title {
+  padding: 12px;
+  font-weight: 600;
+}
+
+input {
+  margin: 0px 15px;
+  padding: 10px;
+}
+
+.login__btn {
+  padding: 10px;
+  margin: 10px;
+  background: $offWhite;
+  color: $oil;
+}

@@ -1,0 +1,10 @@
+<!doctype html>
+
+<div id="login__container">
+    <form name="user-login" ng-submit="logCtrl.userLogin(user-login.name.$viewValue, user-login.password.$viewValue)" novalidate>
+        <span class="login__title">Please log in: </span>
+        <input ng-model="logCtrl.userInput.name" type="text" placeholder="Name" name="name">
+        <input ng-model="logCtrl.userInput.password" type="password" name="password" placeholder="Password">
+        <button class="login__btn" type="submit">LOGIN</button>
+    </form>
+</div>

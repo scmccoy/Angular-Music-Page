@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  height: 15vh;
+  background: $burntUmber;
+
+}
+.header__title {
+  margin-left: 25px;
+}
+
+.header__welcome {
+  position: absolute;
+  top: 70px;
+  right: 175px;
+}
+
+nav {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  width: 200px;
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
