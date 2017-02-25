@@ -13,7 +13,7 @@ app.controller('LoginController', function($state, UserManagement, localStorageS
 		};
 		console.log('after', this.userInput); // logs current input
 		console.log('after 2 ', userInput); // logs 0 , 0
-		if (UserManagement.userCheck(this.userInput) === undefined || UserManagement.userCheck(this.userInput) === 'Guest') {
+		if (UserManagement.userCheck(this.userInput.name) === undefined || UserManagement.userCheck(this.userInput.name) === 'Guest') {
 			this.currentUser.name = 'Guest';
 			console.log('currentUser in undefined --> ', this.currentUser.name);
 		} else {
