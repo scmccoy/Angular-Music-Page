@@ -80,6 +80,10 @@ header {
   top: 70px;
   right: 175px; }
 
+.header__user {
+  font-size: 20px;
+  font-weight: 600; }
+
 nav {
   position: absolute;
   top: 5px;
@@ -117,15 +121,14 @@ input {
 
 .songs__container {
   display: flex;
-  justify-content: space-between;
-  flex-flow: row nowrap;
+  justify-content: center;
   width: 100%; }
 
-.songs__info-container {
-  border: 2px solid #333;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding: 10px;
-  margin: 5px;
-  width: 30%; }
+th {
+  width: 25%; }
+
+#details__go-back {
+  padding: 10px 15px;
+  background: #FAEBD7;
+  color: #262214;
+  border: 1px solid #262214; }

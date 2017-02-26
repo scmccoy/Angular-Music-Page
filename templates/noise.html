@@ -1,0 +1,24 @@
+<!doctype html>
+<h1>Noise</h1>
+<div class="songs__container">
+    <span class="header__welcome">User: <span class="header__user"> {{logCtrl.isStupid()}}</span></span>
+
+    <table>
+        <tr>
+            <th>Artiste</th>
+            <th>Song Title</th>
+            <th>Image</th>
+            <th>Link</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>{{noiseCtrl.selectedSong.artist}}</td>
+            <td>{{noiseCtrl.selectedSong.title}}</td>
+            <td><img ng-src="{{noiseCtrl.selectedSong.img_url}}"></td>
+            <td><a href="{{noiseCtrl.selectedSong.web_url}}">Learn the Songs</a></td>
+            <td>{{noiseCtrl.selectedSong.year}}</td>
+        </tr>
+    </table>
+    <a href="#" ui-sref="musicParent.songsCtrl" id="details__go-back">Back to Songs</a>
+
+</div>

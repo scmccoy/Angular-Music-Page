@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="./lib/styles/main.css">
 </head>
 
-<body>
-    <header ng-controller="LoginController as logCtrl">
+<body ng-controller="LoginController as logCtrl">
+    <header>
         <h1 class="header__title">Music.json</h1>
         <nav id="header__nav">
             <ul>
                 <li><a ui-sref="musicParent.homeCtrl" href="#">Home</a></li>
                 <li><a ui-sref="musicParent.songsCtrl" href="#">Songs</a></li>
                 <li><a ui-sref="musicParent.friendsCtrl" href="#">Friends</a></li>
+                <li><a ui-sref="musicParent.noiseCtrl" href="#">Temp Details</a></li>
                 <li><a ui-sref="musicParent.logCtrl" href="#">Login</a></li>
             </ul>
         </nav>
-        <span class="header__welcome">User: <span class="header__user"> {{logCtrl.currentUser}}</span></span>
+
     </header>
     <main id="template__container">
 
@@ -37,6 +38,8 @@
     <script src="./src/js/controllers/home-controller.js"></script>
     <script src="./src/js/controllers/songs-controller.js"></script>
     <script src="./src/js/controllers/friends-controller.js"></script>
+    <script src="./src/js/controllers/noise-controller.js"></script>
+
 
     <script src="./src/js/services/user-service.js"></script>
     <script src="./src/js/services/local-services.js"></script>

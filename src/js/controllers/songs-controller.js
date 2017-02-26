@@ -14,12 +14,10 @@ app.controller('SongsController', function($state, $q, songDatabase) {
 	};
 
 	$q.when(songDatabase.get()).then((response) => {
-
 		this.allSongs = response.data.songs;
 		console.log('allSongs --> ', this.allSongs);
 		console.log('Response: ', response);
 	}).catch((error) => {
 		console.log(error);
 	});
-
 });

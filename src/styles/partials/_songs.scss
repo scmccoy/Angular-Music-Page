@@ -1,16 +1,16 @@
 .songs__container {
   display: flex;
-  justify-content: space-between;
-  flex-flow: row nowrap;
+  justify-content: center;
   width: 100%;
 }
 
-.songs__info-container {
-  border: 2px solid #333;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding: 10px;
-  margin: 5px;
-  width: 30%;
+th {
+  width: 25%;
+}
+
+#details__go-back {
+  padding: 10px 15px;
+  background: $offWhite;
+  color: $oil;
+  border: 1px solid $oil;
 }
