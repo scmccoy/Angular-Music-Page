@@ -1,5 +1,5 @@
 app.service('UserManagement', function(localStorageService) {
-	// let userInput = {};
+	let userInput = {};
 	let loginStorage = [];
 	let currentTime = Date.now();
 

@@ -1,0 +1,16 @@
+.songs__container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.songs__info-container {
+  border: 2px solid #333;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  width: 30%;
+}

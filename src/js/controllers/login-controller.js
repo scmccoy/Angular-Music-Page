@@ -1,7 +1,7 @@
 app.controller('LoginController', function($state, UserManagement, localStorageService) {
 	// console.log('in loginController');
 
-	this.currentUser = null;
+	this.currentUser = '';
 	this.userInput = {};
 
 	this.userLogin = function(name, password) {
@@ -18,8 +18,9 @@ app.controller('LoginController', function($state, UserManagement, localStorageS
 			console.log('currentUser in undefined --> ', this.currentUser.name);
 		} else {
 			this.currentUser = UserManagement.userCheck(this.userInput.name);
+			// transition to 'Songs page?'
 			console.log('currentUser in else --> ', this.currentUser);
-			console.log('currentUser in else --> ', this.currentUser.name);
+			console.log('currentUser name in else --> ', this.currentUser.name);
 		}
 
 		// this.testStuff = userLogin(userInput.name);
