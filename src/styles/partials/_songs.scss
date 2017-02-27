@@ -5,12 +5,60 @@
 }
 
 th {
-  width: 25%;
+  font-size: 22px;
+  color: $offWhite;
+  padding: 5px 0 10px 0;
+  text-align: left;
+  width: 50%;
 }
 
-#details__go-back {
+td {
+  padding: 5px 0px;
+  font-size: 18px;
+  a {
+    color: $offWhite;
+  }
+}
+
+#details__go-back { // button
   padding: 10px 15px;
   background: $offWhite;
   color: $oil;
   border: 1px solid $oil;
+  margin-top: 25px;
+  width: 150px;
+}
+
+#songs__noisecontainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+span.noise_detail {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 20px;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.noise_imgDetail {
+  width: 40%;
+}
+
+.noise__allDetails {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.noise__otherDetails {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+img {
+  max-width: 300px;
 }

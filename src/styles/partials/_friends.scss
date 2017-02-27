@@ -1,0 +1,15 @@
+.fr__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fr__image {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.fr__indCont {
+  display: flex;
+  flex-flow: column;
+  margin: 10px 15px;
+}

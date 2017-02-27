@@ -125,10 +125,64 @@ input {
   width: 100%; }
 
 th {
-  width: 25%; }
+  font-size: 22px;
+  color: #FAEBD7;
+  padding: 5px 0 10px 0;
+  text-align: left;
+  width: 50%; }
+
+td {
+  padding: 5px 0px;
+  font-size: 18px; }
+  td a {
+    color: #FAEBD7; }
 
 #details__go-back {
   padding: 10px 15px;
   background: #FAEBD7;
   color: #262214;
-  border: 1px solid #262214; }
+  border: 1px solid #262214;
+  margin-top: 25px;
+  width: 150px; }
+
+#songs__noisecontainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%; }
+
+span.noise_detail {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 20px;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap; }
+
+.noise_imgDetail {
+  width: 40%; }
+
+.noise__allDetails {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%; }
+
+.noise__otherDetails {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%; }
+
+img {
+  max-width: 300px; }
+
+.fr__container {
+  display: flex;
+  justify-content: space-around; }
+
+.fr__image {
+  width: 150px;
+  border-radius: 50%; }
+
+.fr__indCont {
+  display: flex;
+  flex-flow: column;
+  margin: 10px 15px; }

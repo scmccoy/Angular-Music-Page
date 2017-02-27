@@ -17,13 +17,12 @@
                 <li><a ui-sref="musicParent.homeCtrl" href="#">Home</a></li>
                 <li><a ui-sref="musicParent.songsCtrl" href="#">Songs</a></li>
                 <li><a ui-sref="musicParent.friendsCtrl" href="#">Friends</a></li>
-                <li><a ui-sref="musicParent.noiseCtrl" href="#">Temp Details</a></li>
                 <li><a ui-sref="musicParent.logCtrl" href="#">Login</a></li>
             </ul>
         </nav>
 
     </header>
-    <main id="template__container">
+    <main id="template__container" ng-controller="FriendsController as friendsCtrl">
 
         <ui-view></ui-view>
 

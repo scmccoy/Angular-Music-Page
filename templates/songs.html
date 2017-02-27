@@ -5,19 +5,11 @@
     <table>
         <tr>
             <th ng-click="songsCtrl.orderByField='artist'; songsCtrl.reverseSort = !songsCtrl.reverseSort">Artiste</th>
-            <th ng-click="songsCtrl.orderByField='title'; songsCtrl.reverseSort = !songsCtrl.reverseSort">Song Title</th>
-            <!-- <th>Image</th> -->
-            <!-- <th>Link</th>
-            <th>Year</th> -->
+            <th ng-click="songsCtrl.orderByField='title'; songsCtrl.reverseSort = !songsCtrl.reverseSort">Album Title</th>
         </tr>
         <tr ng-repeat="song in songsCtrl.allSongs | orderBy: songsCtrl.orderByField: songsCtrl.reverseSort">
-            <!-- <td><a href="" ng-click="songsCtrl.show = !songsCtrl.show">{{song.artist}}</a></td> -->
             <td><a ui-sref="musicParent.noiseCtrl({id: song.id})">{{song.artist}}</a></td>
             <td>{{song.title}}</td>
-            <!-- <td ng-show="songsCtrl.details"><img src="./src/images/slayer.png"></td> -->
-            <!-- <td ng-show="songsCtrl.show"><a href="{{song.web_url}}">Learn the Songs</a></td>
-            <td ng-show="songsCtrl.show">{{song.year}}</td> -->
         </tr>
     </table>
-
 </div>
