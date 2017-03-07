@@ -1,32 +1,33 @@
 header {
+  background: rgba(105, 118, 114, 0.7);
   display: flex;
-  justify-content: flex-start;
   flex-flow: row wrap;
   height: 15vh;
-  background: $burntUmber;
-
+  justify-content: flex-start;
+  width: 100%;
 }
 .header__title {
   margin-left: 25px;
 }
 
 .header__welcome {
+  background: rgba(100, 105, 96, 0.4);
+  border-radius: 3px;
+  padding: 5px;
   position: absolute;
-  top: 70px;
-  right: 175px;
+  right: 20px;
+  top: 57px;
 }
-
 
 .header__user {
   font-size: 20px;
   font-weight: 600;
 }
 
-
 nav {
   position: absolute;
-  top: 5px;
-  right: 15px;
+  right: 25px;
+  top: 35px;
   width: 200px;
   ul {
     display: flex;

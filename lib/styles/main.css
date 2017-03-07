@@ -43,13 +43,14 @@ table {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-body {
-  background: #591E18; }
-
 h1, h2, h3 {
+  color: #333;
   font-family: 'Merriweather', serif; }
 
 p {
+  font-size: 14px;
+  line-height: 16;
+  color: #333;
   font-family: 'Roboto', sans-serif; }
 
 h1 {
@@ -57,28 +58,48 @@ h1 {
   font-weight: 600;
   line-height: 2; }
 
+body {
+  background: url("https://img.clipartfest.com/52fd56a485d2fe08237cb5ab786a7e9d_cash-in-on-the-crowd-the-crowd_1758-874.jpeg") no-repeat center center fixed;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4; }
+
 main {
-  display: flex; }
+  background: rgba(250, 235, 215, 0.3);
+  display: flex;
+  padding: 15px; }
 
 #template__container {
   display: flex;
   justify-content: space-between;
   margin: 15px 25px; }
 
+img {
+  max-width: 250px; }
+
+a {
+  font-size: 16px;
+  padding: 3px;
+  text-decoration: none; }
+
 header {
+  background: rgba(105, 118, 114, 0.7);
   display: flex;
-  justify-content: flex-start;
   flex-flow: row wrap;
   height: 15vh;
-  background: #8C2626; }
+  justify-content: flex-start;
+  width: 100%; }
 
 .header__title {
   margin-left: 25px; }
 
 .header__welcome {
+  background: rgba(100, 105, 96, 0.4);
+  border-radius: 3px;
+  padding: 5px;
   position: absolute;
-  top: 70px;
-  right: 175px; }
+  right: 20px;
+  top: 57px; }
 
 .header__user {
   font-size: 20px;
@@ -86,8 +107,8 @@ header {
 
 nav {
   position: absolute;
-  top: 5px;
-  right: 15px;
+  right: 25px;
+  top: 35px;
   width: 200px; }
   nav ul {
     display: flex;
@@ -95,29 +116,29 @@ nav {
     justify-content: space-between; }
 
 #login__container {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background: #262214;
   border: 2px solid #A69D81;
   border-radius: 10px;
-  padding: 25px 15px;
+  color: #FAEBD7;
+  display: flex;
+  justify-content: center;
   margin: 15px;
-  background: #262214;
-  color: #FAEBD7; }
+  padding: 25px 15px; }
 
 .login__title {
-  padding: 12px;
-  font-weight: 600; }
+  font-weight: 600;
+  padding: 12px; }
 
 input {
   margin: 0px 15px;
   padding: 10px; }
 
 .login__btn {
-  padding: 10px;
-  margin: 10px;
   background: #FAEBD7;
-  color: #262214; }
+  color: #262214;
+  margin: 10px;
+  padding: 10px; }
 
 .songs__container {
   display: flex;
@@ -137,12 +158,12 @@ td {
   td a {
     color: #FAEBD7; }
 
-#details__go-back {
-  padding: 10px 15px;
+.details__go-back {
   background: #FAEBD7;
-  color: #262214;
   border: 1px solid #262214;
+  color: #262214;
   margin-top: 25px;
+  padding: 10px 15px;
   width: 150px; }
 
 #songs__noisecontainer {
@@ -151,12 +172,11 @@ td {
   width: 100%; }
 
 span.noise_detail {
-  font-size: 30px;
+  display: flex;
+  flex-flow: row wrap;
   font-weight: 600;
   margin-left: 20px;
-  width: 90%;
-  display: flex;
-  flex-flow: row wrap; }
+  width: 90%; }
 
 .noise_imgDetail {
   width: 40%; }
@@ -171,16 +191,13 @@ span.noise_detail {
   flex-flow: row wrap;
   width: 60%; }
 
-img {
-  max-width: 300px; }
-
 .fr__container {
   display: flex;
   justify-content: space-around; }
 
 .fr__image {
-  width: 150px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  width: 150px; }
 
 .fr__indCont {
   display: flex;

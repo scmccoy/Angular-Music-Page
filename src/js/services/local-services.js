@@ -1,6 +1,4 @@
 app.service('StorageService', function(localStorageService) {
-
-
 	function set(name, data) {
 		localStorageService.set(name, data);
 	}

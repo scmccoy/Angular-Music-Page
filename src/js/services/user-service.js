@@ -1,8 +1,8 @@
 app.service('UserManagement', function($state, localStorageService) {
 	this.userInput = {};
-	// let loginStorage = [];
 
 	function userCheck(userInput) {
+
 		let userDB = localStorageService.get('login-data');
 
 		if (userDB.name === userInput.name) { // if input name is same as in local storage
@@ -13,7 +13,6 @@ app.service('UserManagement', function($state, localStorageService) {
 		localStorageService.set('login-data', userInput);
 		$state.go('musicParent.songsCtrl', []); // switch screens to ...
 	}
-
 	return {
 		userCheck: userCheck
 	};

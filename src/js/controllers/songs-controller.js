@@ -1,5 +1,4 @@
 app.controller('SongsController', function($state, $q, songDatabase, localStorageService) {
-	console.log('in SongsController');
 
 	this.orderByField = 'artist';
 	this.reverseSort = false;
@@ -15,14 +14,9 @@ app.controller('SongsController', function($state, $q, songDatabase, localStorag
 
 	$q.when(songDatabase.get()).then((response) => {
 		this.allSongs = response.data.songs;
-
 		this.songCount = this.allSongs.length;
 		localStorageService.set('song-count', this.songCount);
-
-		console.log('the count --> ', this.songCount);
-
-		console.log('allSongs --> ', this.allSongs);
-		console.log('Response: ', response);
+		console.log('Success');
 	}).catch((error) => {
 		console.log(error);
 	});
