@@ -1,3 +1,5 @@
-# week-7-day-4
+# Music Page
 
-Github Pages :: https://scmccoy.github.io/week-7-day-4/
+Built using Angular JS
+
+Github Pages :: https://scmccoy.github.io/Angular-Music-Page/#/login
